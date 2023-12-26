@@ -6,11 +6,11 @@ function Footer() {
       <span>
         Powered by{' '}
         <a
-          href='https://github.com/ytliuSVN'
+          href='https://github.com/Anurag-deo14/NextNews'
           target='_blank'
           rel='noopener noreferrer'
         >
-          @ytliuSVN
+          AnuragOnGit
         </a>
       </span>
     </footer>

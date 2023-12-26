@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: center;
     height: 44px;
-    border-bottom: 3px solid #bb99e6;
+    border-bottom: 3px solid rgb(255,255,255, 0.8);
 
     &.expand {
-        background: rgba(178, 92, 248, 0.3);
+        background: rgb(255,255,255, 0.4);
     }
 
     .searchInputs {

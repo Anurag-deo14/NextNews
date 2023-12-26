@@ -1,42 +1,85 @@
-$primary-color: #6f02b5;
+// Header.module.scss
+
+$primary-color: #2f2f2f;
+$accent-color: #3498db;
 
 .header {
-    background-color: $primary-color;
-    z-index: 999;
-    position: fixed;
-    width: 100%;
-    top: 0;
+  background-color: $primary-color;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    .container {
-        display: flex;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        max-width: 1140px;
-        justify-content: space-between;
+  .container {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 15px;
+    max-width: 1140px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-        .logo {
-            cursor: pointer;
-            padding-bottom: 5px;
-        }
-
-        .search {
-            display: flex;
-            align-items: flex-end;
-        }
+  .logo {
+    cursor: pointer;
+    a {
+      display: block;
     }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+
+    // Adjust styles as needed
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+
+    .welcome {
+      margin-right: 10px;
+      color: white;
+    }
+
+    // Adjust styles as needed
+  }
+
+  .signupButton {
+    background-color: $accent-color;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
 }
 
 @media (max-width: 600px) {
+  .header {
     .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+      flex-direction: column;
     }
 
     .logo {
-        width: 30%;
+      width: 100%;
+      margin-bottom: 10px;
     }
+
+    .search,
+    .user {
+      width: 100%;
+    }
+
+    .signupButton {
+      width: 100%;
+    }
+  }
 }

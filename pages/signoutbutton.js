@@ -1,4 +1,5 @@
 // SignOutButton.js
+
 import { auth } from './firebase'; // Adjust the path accordingly
 
 const SignOutButton = () => {
@@ -12,7 +13,18 @@ const SignOutButton = () => {
   };
 
   return (
-    <button onClick={handleSignOut}>
+    <button
+      style={{
+        backgroundColor: '#3498db',
+        color: 'white',
+        padding: '8px 15px',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s',
+      }}
+      onClick={handleSignOut}
+    >
       Sign Out
     </button>
   );

@@ -40,12 +40,12 @@ function Bookmarks() {
   return (
     <div className='container'>
       <Head>
-        <title>KaiOS | Bookmarks</title>
+        <title>LikedArticles</title>
       </Head>
 
       <main className={styles.main}>
         <div className={styles.heading}>
-          <h1>All Bookmarks</h1>
+          <h1>All Liked Articles</h1>
         </div>
 
         {loading ? (

@@ -124,7 +124,7 @@ function Home() {
                 router.push('/bookmarks');
               }}
             >
-              View Bookmark
+              ❤️ Liked Articles
             </Button>
             <Select onChange={handleSorting} orderBy={sorting} />
           </div>
@@ -147,7 +147,7 @@ function Home() {
   return (
     <div className='container'>
       <Head>
-        <title>KaiOS | News</title>
+        <title>NextNews</title>
       </Head>
 
       {getContent()}

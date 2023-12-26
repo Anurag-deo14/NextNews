@@ -1,4 +1,4 @@
-$primary-color: #6f02b5;
+$primary-color: #2f2f2f;
 
 .container {
     box-sizing: border-box;
@@ -13,7 +13,7 @@ $primary-color: #6f02b5;
     border-radius: 4px;
 
     &:hover {
-        background: linear-gradient(to bottom, #a344df 25%, #6e0fa8 100%);
+        background: linear-gradient(to bottom, #3498db 25%, #3498db 100%);
         transition: all 0.2s ease;
         cursor: pointer;
     }

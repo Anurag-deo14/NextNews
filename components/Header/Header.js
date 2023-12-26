@@ -1,13 +1,15 @@
+// Header.jsx
+
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import { SearchBar } from '../index';
 import { useAuth } from '../../pages/AuthUserContext'; // Update the path
-import auth from '../../pages/firebase'
 import SignOutButton from '../../pages/signoutbutton';
 
 function Header(props) {
   const { user } = useAuth();
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -15,10 +17,10 @@ function Header(props) {
           <Link href='/'>
             <a onClick={props.onClick}>
               <Image
-                src='/assets/KaiOS-Logo.svg'
-                alt='KaiOS Logo'
+                src='/assets/NNlogo.png'
+                alt='NNLogo'
                 width={142}
-                height={56}
+                height={20}
               />
             </a>
           </Link>
@@ -26,16 +28,18 @@ function Header(props) {
         <div className={styles.search}>
           <SearchBar {...props} />
         </div>
-        {user ? (
-          <div className={styles.user}>
-            <p>Welcome, {user.email}</p>
-            <SignOutButton/>
-          </div>
-        ) : (
-          <Link href="/signup">
-            <button>Signup</button>
-          </Link>
-        )}
+        <div className={styles.user}>
+          {user ? (
+            <>
+              <p className={styles.welcome}>Welcome, {user.email}</p>
+              <SignOutButton />
+            </>
+          ) : (
+            <Link href="/signup">
+              <button className={styles.signupButton}>Signup</button>
+            </Link>
+          )}
+        </div>
       </div>
     </header>
   );

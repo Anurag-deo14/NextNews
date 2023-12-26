@@ -119,17 +119,7 @@ $nprogress-color: #00e1ff;
     }
 }
 
-$selection-color: #b951ff;
-::-moz-selection {
-    background: $selection-color;
-    color: white;
-}
-
-::selection {
-    background: $selection-color;
-    color: white;
-}
 
 ::placeholder {
-    color: #af8ed8;
+    color: white;
 }
