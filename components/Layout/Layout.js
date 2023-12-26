@@ -118,7 +118,7 @@ function Layout({ children }) {
                 setSearchTerm('');
               }}
             >
-              View Bookmark
+             ❤️ Liked Articles
             </Button>
             <Select onChange={handleSorting} orderBy={sorting} />
           </div>

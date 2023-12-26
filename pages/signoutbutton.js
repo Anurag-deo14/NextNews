@@ -1,6 +1,6 @@
 // SignOutButton.js
 
-import { auth } from './firebase'; // Adjust the path accordingly
+import { auth } from '../firebase'; // Adjust the path accordingly
 
 const SignOutButton = () => {
   const handleSignOut = async () => {

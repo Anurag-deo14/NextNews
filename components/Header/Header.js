@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import { SearchBar } from '../index';
-import { useAuth } from '../../pages/AuthUserContext'; // Update the path
+import { useAuth } from '../../AuthUserContext'; // Update the path
 import SignOutButton from '../../pages/signoutbutton';
 
 function Header(props) {

@@ -4,7 +4,7 @@ import Layout from '../components/Layout/Layout';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
-import { AuthUserProvider } from './AuthUserContext';
+import { AuthUserProvider } from '../AuthUserContext';
 
 // NProgress Customization
 NProgress.configure({

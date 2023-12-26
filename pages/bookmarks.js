@@ -1,7 +1,7 @@
 // bookmarks.js
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
-import { auth, db } from './firebase';
+import { auth, db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import styles from '../styles/Bookmarks.module.scss';
 import Link from 'next/dist/client/link';

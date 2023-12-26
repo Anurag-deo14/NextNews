@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { Button, ScrollToTop } from '../components';
 import LikeButton from './likebutton';
-import { auth } from './firebase'; // Import the Firebase auth instance
+import { auth } from '../firebase'; // Import the Firebase auth instance
 
 const Toast = dynamic(() => import('../components/Toast/Toast'));
 

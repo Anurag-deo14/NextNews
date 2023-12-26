@@ -1,5 +1,5 @@
 // likebutton.js
-import { db } from './firebase';
+import { db } from '../firebase';
 import { useState, useEffect } from 'react';
 import { collection, doc, setDoc, deleteDoc, getDoc } from 'firebase/firestore';
 
