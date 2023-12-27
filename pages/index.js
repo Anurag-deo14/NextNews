@@ -12,13 +12,27 @@ import {
 } from '../components';
 import styles from '../styles/Home.module.scss';
 import useComboFetch from '../components/Hooks/useComboFetch';
+import { useEffect } from 'react';
 
 function Home() {
   const router = useRouter();
   const [sorting, setSorting] = useState('newest');
   const { loading, error, news, sport, culture, lifeStyle } =
     useComboFetch(sorting);
-
+    
+    useEffect(() => {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register('./service-worker.js')
+          .then(registration => {
+            console.log('Service worker registration successful', registration);
+          })
+          .catch(err => {
+            console.warn('Service worker registration failed', err.message);
+          });
+      }
+    }, []); 
+    
   // Combo grid layout
   const sectionTopStory = (content) => {
     const primary = content.slice(0, 1);
