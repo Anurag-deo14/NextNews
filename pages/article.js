@@ -29,7 +29,7 @@ function Article({ news }) {
   return (
     <div className='container'>
       <Head>
-        <title>KaiOS | Article</title>
+        <title>Article</title>
       </Head>
 
       <main>
