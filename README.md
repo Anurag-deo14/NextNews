@@ -1,4 +1,5 @@
-#Project Title: NextNews
+#Project Title: NextNews (https://nextnnews.netlify.app/)
+
 Overview
 NextNews is a modern and feature-rich news application that allows users to stay informed about the latest news articles. It incorporates user registration and login functionalities for a personalized experience, utilizing Firebase for authentication. The app integrates the Guardian API to fetch real-time news articles and presents them in a user-friendly manner. The project focuses on delivering a seamless user experience with a responsive design.
 
