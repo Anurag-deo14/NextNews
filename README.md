@@ -5,6 +5,8 @@ NextNews is a modern and feature-rich news application that allows users to stay
 #Features
 User Registration and Login
 Users can create accounts and log in to access personalized news preferences securely through Firebase authentication.
+![Screenshot (491)](https://github.com/Anurag-deo14/NextNews/assets/110685873/8e8ccbce-3464-45c9-ba1e-b91fa2bf06b6)
+![Screenshot (492)](https://github.com/Anurag-deo14/NextNews/assets/110685873/3b81c9bb-170f-40a6-9490-c32e158270f8)
 
 #News List View
 Display the latest news articles in a list view for the Next.js app and a two-column list view for the web app.
