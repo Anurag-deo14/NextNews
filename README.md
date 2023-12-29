@@ -37,5 +37,5 @@ Run the application: npm start.
 This project is licensed under the MIT License.
 
 #Contact
-For any inquiries or feedback, please contact [your_email@example.com].
+For any inquiries or feedback, please contact [anuragjee2020@.com].
 
